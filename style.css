@@ -1,0 +1,96 @@
+
+:root {
+
+    --base1: #d1c156;
+    --base2: #f0eac5;
+
+    --hand-font: 'Just Me Again Down Here', cursive;
+    --text-font: 'Montserrat Alternates', sans-serif;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    font-family: 'Mansalva', cursive;
+
+    font-family: 'Just Another Hand', cursive;
+
+    font-family: 'Just Me Again Down Here', cursive;
+
+
+
+
+
+}
+
+body {
+
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    position: fixed;
+    overflow: none;
+    text-align: center;
+    background: repeating-linear-gradient(0deg,
+            var(--base1),
+            var(--base1) 5px,
+            var(--base2) 7px,
+            var(--base2) 3px);
+}
+
+#logo-div {
+    display: flex;
+
+}
+
+#header-img {
+    height: 120px
+}
+
+h3 {
+    font-family: var(--hand-font);
+    font-size: 30px;
+    color: white;
+    line-height: 80%;
+    font-weight:bolder;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.mdi {
+    font-size: 16px;
+    padding: 0px 5px;
+    line-height: 25%;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 100vw;
+    font-family: var(--hand-font);
+    background-image: url(assets/OF18GU0.jpg);
+}
+
+.nav-link {
+    color: white;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+main {
+    margin-top:180px;
+    font-family: var(--text-font);
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #logo-div {
+        width: 100vw;
+        align-content: center;
+        justify-content: center;
+    }
+
+}
