@@ -1,4 +1,3 @@
-
 :root {
 
     --base1: #d1c156;
@@ -7,6 +6,17 @@
     --hand-font: 'Just Me Again Down Here', cursive;
     --text-font: 'Montserrat Alternates', sans-serif;
 
+    --purple: #d08cf5;
+    --pink: #fc97ec;
+    --yellow: #edca3e;
+    --dark-grey: #303030;
+
+    --sripped-background: repeating-linear-gradient(0deg,
+            var(--base1),
+            var(--base1) 5px,
+            var(--base2) 7px,
+            var(--base2) 3px);
+
     font-family: 'Montserrat Alternates', sans-serif;
 
     font-family: 'Mansalva', cursive;
@@ -14,11 +24,6 @@
     font-family: 'Just Another Hand', cursive;
 
     font-family: 'Just Me Again Down Here', cursive;
-
-
-
-
-
 }
 
 body {
@@ -29,7 +34,7 @@ body {
     align-content: center;
     background-position: center;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
 }
 
 header {
@@ -39,11 +44,7 @@ header {
     position: fixed;
     overflow: none;
     text-align: center;
-    background: repeating-linear-gradient(0deg,
-            var(--base1),
-            var(--base1) 5px,
-            var(--base2) 7px,
-            var(--base2) 3px);
+    background: var(--sripped-background);
 }
 
 #logo-div {
@@ -60,9 +61,8 @@ h3 {
     font-size: 30px;
     color: white;
     line-height: 80%;
-    font-weight:bolder;
+    font-weight: bolder;
     -webkit-text-stroke: 1px black;
-
 }
 
 .mdi {
@@ -78,12 +78,14 @@ nav {
     width: 100vw;
     font-family: var(--hand-font);
     background-image: url(assets/OF18GU0.jpg);
+    z-index: 100;
 }
 
 .nav-link {
     color: white;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 main {
@@ -95,16 +97,97 @@ main {
 }
 
 section {
-    padding: 10px;
+    padding: 10px 10px;
 }
 
 h2 {
+    background-image: url(assets/OF18GU0.jpg);
+    color: white;
+    padding: 10px 20px;
+}
+
+p {
+    color: var(--dark-grey);
+}
+
+#info {
+    background-image: url(assets/OF18GU0.jpg);
+    padding: 5px;
+}
+
+#info>p {
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#flavours-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.flavor-div-outter {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    text-align: center;
+    border: var(--dark-grey) solid 5px;
+    border-radius: 10px;
+}
+
+.flavor-div {
+    margin: 20px 0px;
+    height: 110px;
+    width: 150px;
+    background: var(--sripped-background);
+
+    color: var(--dark-grey);
+    font-size: 24px;
+    font-weight: bolder;
+
 
 }
 
+#oatmeal-raisin {
+    background: var(--purple);
+}
 
+#cherry-amond-vanilla {
+    background: var(--pink);
+}
 
+#peanut-chocolate-chip {
+    background: var(--yellow);
+}
+
+#video {
+    width: 100%;
+}
+
+footer {
+}
+
+#message {
+    width: 100%;
+    height: 150px;
+}
+#email {
+    width: 100%;
+    max-width: 500px;
+}
+
+label {
+    font-size: 20px;
+    text-align: center;
+}
 @media only screen and (min-width: 600px) {
+
+    body {
+        margin-top:250px;
+    }
 
     #logo-div {
         width: 100vw;
@@ -112,12 +195,30 @@ h2 {
         justify-content: center;
     }
 
-    main {
-    width: 60vw;
-}
+    #header-img {
+        height: 180px;
+    }
 
-    section {
-    padding: 50px 100px;
+    h3 {
+        font-size: 40px;
+    }
+
+    main {
+        width: 60vw;
+    }
+
+    p {
+        font-size: 24px;
+        padding: 10px 100px;
+        line-height: 40px;
+    }
+
+    #flavours-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #video {
+    width: 100%;
 }
 
 }

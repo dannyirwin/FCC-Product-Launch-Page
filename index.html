@@ -13,48 +13,97 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div id="logo-div">
-        <img id="header-img" src="assets/OT-Logo-part-transparent.PNG">
-        <h3>Made for PHILLY
-            <br><span class="mdi mdi-star mdi-rotate-135"></span>
-            <span class="mdi mdi-star mdi-rotate-90"></span><br>
-            fighting Local Hunger</h3>
-            </div>
+            <img id="header-img" src="assets/OT-Logo-part-transparent.PNG">
+            <h3>Made for PHILLY
+                <br><span class="mdi mdi-star mdi-rotate-135"></span>
+                <span class="mdi mdi-star mdi-rotate-90"></span><br>
+                fighting Local Hunger</h3>
+        </div>
         <nav id="nav-bar">
-            <a class="nav-link">About</a>
-            <a class="nav-link">Flavors</a>
-            <a class="nav-link">Contact Us</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#flavors">Flavors</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
         </nav>
     </header>
 
     <main>
 
         <section id="about">
-            <p>OT bars are unique and tasty granola bars made with vegan and gluten free ingredients.  They are hand crafted by two borthers in Philadelphia in an effort to provide healthy and neutrional snacks at an affordable price, while combating hunger in the Philly area.  10% of profits are donated to Philabundance. <a href="https://www.philabundance.org/" target="_blank"> You can find more infomration about Philabundance by clicking here. </a></p>
+            <p>OT bars are unique and tasty granola bars made with vegan and gluten free ingredients. They are hand crafted by two borthers in Philadelphia in an effort to provide healthy and neutrional snacks at an affordable price, while combating hunger in the Philly area. 10% of profits are donated to Philabundance.</p>
 
-            <p>Follow us on all the socials</p><br>
-            <a href="https://www.instagram.com/otbarphl/?hl=en" target="_blank">
-                <span class="mdi mdi-instagram"> Instagram</a>
-            <a href="https://twitter.com/otbarphl?lang=en" target="_blank"><span class="mdi mdi-twitter"> Twitter</a>
+            <p><a href="https://www.philabundance.org/" target="_blank"> You can find more infomration about Philabundance by clicking here. </a><br>
+                <iframe id="video" width="420" height="315" src="https://www.youtube.com/watch?v=V2FH4W8ogck">
+                </iframe> </p>
+
+            <p>Follow us on all the socials
+                <br>
+                <a href="https://www.instagram.com/otbarphl/?hl=en" target="_blank">
+                    <span class="mdi mdi-instagram"> Instagram</a>
+                <a href="https://twitter.com/otbarphl?lang=en" target="_blank"><span class="mdi mdi-twitter"> Twitter</a></p>
+
         </section>
 
         <section id="flavors">
             <h2>Flavors</h2>
+            <div id="flavours-container">
 
-            <div id="oatmeal-rasin" class="flavor-div">Oatmeal Raisin</div>
-            <div id="oatmeal-rasin" class="flavor-div">Cherry Almond Vanilla</div>
-            <div id="oatmeal-rasin" class="flavor-div">Pe</div>
+                <div id="oatmeal-raisin" class="flavor-div-outter">
+
+                    <div class="flavor-div">Oatmeal Raisin</div>
+
+                </div>
+                <div id="cherry-amond-vanilla" class="flavor-div-outter">
+
+                    <div class="flavor-div">Cherry Almond Vanilla</div>
+                </div>
+                <div id="peanut-chocolate-chip" class="flavor-div-outter">
+
+                    <div class="flavor-div">Peanut Chocolate Chip</div>
+
+                </div>
+            </div>
 
         </section>
 
-        <section id="contactUs">
-            <p>Want to get in touch with us to make a purcahse, or for any other questions?</p>
+        <section id="contact-us">
+            <h2> Contact Us</h2>
+            <p>Want to get in touch to make a purcahse, get OT bars in your store, or have any other questions or comments?</p>
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Email Address</label>
+                <br>
+                <input id="email" type="email" name="email" placeholder="Example: OTbarPHL@gmail.com" required>
+                <br>
+
+                <label for="email-list">Would you like to join our email list?</label>
+                <br>
+                <input type=radio name="email-list" balue="yes"> Yes
+                <input type=radio name="email-list" value="No" checked> No
+                <br>
+                <label for="message">Message</label>
+                <input id="message" name="message" type="text" placeholder="Your message will go here">
+
+                <input id="submit" type="submit" value="Submit">
+
+
+
+
+
+            </form>
         </section>
 
-        <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Layerace - www.freepik.com</a>
+        <section>
+            <div id="info">
+                <p> Additional Information: This site was built by Daniel Irwin as a part of the Free Code Camp course with the permission of the owner of OT bars. This page is not intended for commertial use and does not reflect any offical OT bar content. OT bars is a traidmarked propety.
+                    <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by Layerace - www.freepik.com</a> </p>
+            </div>
+        </section>
 
     </main>
+
+
 
 
 </body>
