@@ -22,7 +22,14 @@
 }
 
 body {
-
+    margin-top: 180px;
+    background-image: url(assets/philadelphia2.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 header {
@@ -80,10 +87,22 @@ nav {
 }
 
 main {
-    margin-top:180px;
     font-family: var(--text-font);
+    background: white;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 10px;
+}
+
+h2 {
 
 }
+
+
 
 @media only screen and (min-width: 600px) {
 
@@ -92,5 +111,13 @@ main {
         align-content: center;
         justify-content: center;
     }
+
+    main {
+    width: 60vw;
+}
+
+    section {
+    padding: 50px 100px;
+}
 
 }
