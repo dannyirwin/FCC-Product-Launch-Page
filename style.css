@@ -167,15 +167,12 @@ p {
     width: 100%;
 }
 
-footer {
-}
-
 #message {
-    width: 100%;
+    width: 95%;
     height: 150px;
 }
 #email {
-    width: 100%;
+    width: 95%;
     max-width: 500px;
 }
 
@@ -183,6 +180,8 @@ label {
     font-size: 20px;
     text-align: center;
 }
+
+
 @media only screen and (min-width: 600px) {
 
     body {
